@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footwear</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="#" class="icon hamburger">
+        <i class="fas fa-bars"></i>
+    </a>
+    <a href="#" class="icon phone">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <header class="logo">
+        <i class="fas fa-shoe-prints"></i>
+        <h1>Shoe are Us</h1>
+        <p>Find the right fit for you</p>
+    </header>
+
+    <main class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="slide" data-bg="#cb021c">
+                <img src="images/shoe-1.jpg" alt="Performance Shoe" />
+                <h2>Performance</h2>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="slide" data-bg="#E0E1E3">
+                <img src="images/shoe-2.jpg" alt="Design Shoe" />
+                <h2>Design</h2>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="slide" data-bg="#F6F7F9">
+                <img src="images/shoe-3.jpg" alt="Comodity Shoe" />
+                <h2>Comodity</h2>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="slide" data-bg="#3F4346">
+                <img src="images/shoe-4.jpg" alt="Lightness Shoe" />
+                <h2>Lightness</h2>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </div>
+
+        <button id="left" class="arrow left-arrow">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="right" class="arrow right-arrow">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="progress"></div>
+    </main>
+</body>
+</html>

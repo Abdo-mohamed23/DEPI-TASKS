@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+nav {
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+nav button {
+    background-color: #fff;
+    border: 0;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+.logo {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+main {
+    padding: 3rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.col {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.col:hover {
+    transform: scale(1.05);
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.img-container::after {
+    content: "\f04b";
+    border: 20px solid white;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.green {
+    color: #00d69f;
+}
+
+.red {
+    color: #e75050;
+}
+
+.orange {
+    color: #d27752;
+}
+
+button.watch-now {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.watch-now:hover {
+    background-color: #e64a19;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
