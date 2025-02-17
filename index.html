@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="text-with-line">TO-DO NOW</h1>
+        <p class="icon-with-line">
+          <i class="fa-regular fa-pen-to-square"></i>
+        </p>
+      </div>
+    </header>
+
+    <div class="add">
+      <input id="taskInput" type="text" placeholder="Add a new task..." />
+      <button class="adds" id="addTask">Add Task</button>
+    </div>
+    <hr />
+    <div>
+      <ul id="taskList" class="task-list">
+        <!-- Tasks will be dynamically added here by js-->
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
